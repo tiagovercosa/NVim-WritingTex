@@ -75,7 +75,7 @@ _G.packer_plugins = {
     url = "https://github.com/chrisbra/Colorizer"
   },
   ["alpha-nvim"] = {
-    config = { "\27LJ\2\n◊\3\0\0\b\0\27\00116\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0005\3\b\0>\3\1\2=\2\a\0019\1\5\0009\1\t\0014\2\4\0009\3\n\0'\5\v\0'\6\f\0'\a\r\0B\3\4\2>\3\1\0029\3\n\0'\5\14\0'\6\15\0'\a\16\0B\3\4\2>\3\2\0029\3\n\0'\5\17\0'\6\18\0'\a\19\0B\3\4\0?\3\0\0=\2\a\0016\1\20\0009\1\21\0019\1\22\1'\3\23\0'\4\24\0'\5\25\0005\6\26\0B\1\5\1K\0\1\0\1\0\1\fnoremap\2\15:Alpha<cr>\n<c-n>\6n\20nvim_set_keymap\bapi\bvim\f:qa<cr>\16QUIT NEOVIM\6q#:e ~/.config/nvim/init.lua<cr>\18Neovim Config\6v\22:VimwikiIndex<cr>\tWiki\6w\vbutton\19bottom_buttons\1\0\2\bval\3\0\ttype\fpadding\bval\fmru_cwd\fsection\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\aÄÄ¿ô\4\0" },
+    config = { "\27LJ\2\n◊\3\0\0\b\0\27\00116\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0005\3\b\0>\3\1\2=\2\a\0019\1\5\0009\1\t\0014\2\4\0009\3\n\0'\5\v\0'\6\f\0'\a\r\0B\3\4\2>\3\1\0029\3\n\0'\5\14\0'\6\15\0'\a\16\0B\3\4\2>\3\2\0029\3\n\0'\5\17\0'\6\18\0'\a\19\0B\3\4\0?\3\0\0=\2\a\0016\1\20\0009\1\21\0019\1\22\1'\3\23\0'\4\24\0'\5\25\0005\6\26\0B\1\5\1K\0\1\0\1\0\1\fnoremap\2\15:Alpha<cr>\n<c-n>\6n\20nvim_set_keymap\bapi\bvim\f:qa<cr>\16QUIT NEOVIM\6q#:e ~/.config/nvim/init.lua<cr>\18Neovim Config\6v\22:VimwikiIndex<cr>\tWiki\6w\vbutton\19bottom_buttons\1\0\2\ttype\fpadding\bval\3\0\bval\fmru_cwd\fsection\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\aÄÄ¿ô\4\0" },
     loaded = true,
     path = "/home/tiago/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
@@ -177,7 +177,7 @@ _G.packer_plugins = {
     url = "https://github.com/lervag/vimtex"
   },
   vimwiki = {
-    config = { "\27LJ\2\n \1\0\0\3\0\a\0\0156\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0'\1\6\0=\1\5\0K\0\1\0\18 ‚óã‚óê‚óè‚úó\21vimwiki_listsyms\23vimwiki_global_ext\1\0\2\tpath\23~/doc/repos/mywiki\14path_html!~/dox/repos/mywiki/html_path\17vimwiki_list\6g\bvim\0" },
+    config = { "\27LJ\2\n \1\0\0\3\0\a\0\0156\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0'\1\6\0=\1\5\0K\0\1\0\18 ‚óã‚óê‚óè‚úó\21vimwiki_listsyms\23vimwiki_global_ext\1\0\2\14path_html!~/dox/repos/mywiki/html_path\tpath\23~/doc/repos/mywiki\17vimwiki_list\6g\bvim\0" },
     loaded = true,
     path = "/home/tiago/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
@@ -185,18 +185,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n◊\3\0\0\b\0\27\00116\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0005\3\b\0>\3\1\2=\2\a\0019\1\5\0009\1\t\0014\2\4\0009\3\n\0'\5\v\0'\6\f\0'\a\r\0B\3\4\2>\3\1\0029\3\n\0'\5\14\0'\6\15\0'\a\16\0B\3\4\2>\3\2\0029\3\n\0'\5\17\0'\6\18\0'\a\19\0B\3\4\0?\3\0\0=\2\a\0016\1\20\0009\1\21\0019\1\22\1'\3\23\0'\4\24\0'\5\25\0005\6\26\0B\1\5\1K\0\1\0\1\0\1\fnoremap\2\15:Alpha<cr>\n<c-n>\6n\20nvim_set_keymap\bapi\bvim\f:qa<cr>\16QUIT NEOVIM\6q#:e ~/.config/nvim/init.lua<cr>\18Neovim Config\6v\22:VimwikiIndex<cr>\tWiki\6w\vbutton\19bottom_buttons\1\0\2\ttype\fpadding\bval\3\0\bval\fmru_cwd\fsection\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\aÄÄ¿ô\4\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
+-- Config for: vimwiki
+time([[Config for vimwiki]], true)
+try_loadstring("\27LJ\2\n \1\0\0\3\0\a\0\0156\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0'\1\6\0=\1\5\0K\0\1\0\18 ‚óã‚óê‚óè‚úó\21vimwiki_listsyms\23vimwiki_global_ext\1\0\2\14path_html!~/dox/repos/mywiki/html_path\tpath\23~/doc/repos/mywiki\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
+time([[Config for vimwiki]], false)
 -- Config for: bufferline.nvim
 time([[Config for bufferline.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
 time([[Config for bufferline.nvim]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\n◊\3\0\0\b\0\27\00116\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0005\3\b\0>\3\1\2=\2\a\0019\1\5\0009\1\t\0014\2\4\0009\3\n\0'\5\v\0'\6\f\0'\a\r\0B\3\4\2>\3\1\0029\3\n\0'\5\14\0'\6\15\0'\a\16\0B\3\4\2>\3\2\0029\3\n\0'\5\17\0'\6\18\0'\a\19\0B\3\4\0?\3\0\0=\2\a\0016\1\20\0009\1\21\0019\1\22\1'\3\23\0'\4\24\0'\5\25\0005\6\26\0B\1\5\1K\0\1\0\1\0\1\fnoremap\2\15:Alpha<cr>\n<c-n>\6n\20nvim_set_keymap\bapi\bvim\f:qa<cr>\16QUIT NEOVIM\6q#:e ~/.config/nvim/init.lua<cr>\18Neovim Config\6v\22:VimwikiIndex<cr>\tWiki\6w\vbutton\19bottom_buttons\1\0\2\bval\3\0\ttype\fpadding\bval\fmru_cwd\fsection\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\aÄÄ¿ô\4\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
--- Config for: vimwiki
-time([[Config for vimwiki]], true)
-try_loadstring("\27LJ\2\n \1\0\0\3\0\a\0\0156\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0'\1\6\0=\1\5\0K\0\1\0\18 ‚óã‚óê‚óè‚úó\21vimwiki_listsyms\23vimwiki_global_ext\1\0\2\tpath\23~/doc/repos/mywiki\14path_html!~/dox/repos/mywiki/html_path\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
-time([[Config for vimwiki]], false)
 if should_profile then save_profiles() end
 
 end)
