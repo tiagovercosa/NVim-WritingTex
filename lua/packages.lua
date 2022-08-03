@@ -69,7 +69,7 @@ require('packer').startup(function(use)
       startify.section.mru_cwd.val = { { type = "padding", val = 0 } }
       startify.section.bottom_buttons.val = {
         startify.button("w", "Wiki", ":VimwikiIndex<cr>"),
-        startify.button("v", "Neovim Config", ":e ~/.config/nvim/init.vim<cr>"),
+        startify.button("v", "Neovim Config", ":e ~/.config/nvim/init.lua<cr>"),
         startify.button("q", "QUIT NEOVIM", ":qa<cr>"),
       }
       vim.api.nvim_set_keymap('n', '<c-n>', ':Alpha<cr>', {noremap = true})
