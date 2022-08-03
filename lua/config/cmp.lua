@@ -41,6 +41,7 @@ cmp.setup {
     { name = "path" },
     { name = "cmdline" },
     { name = "ultisnips" },
+		{ name = 'nvim_lua' }
   },
   mapping = {
     ["<Tab>"] = cmp.mapping(
