@@ -76,6 +76,15 @@ require('packer').startup(function(use)
     end
   }
 
+	-- NvimTree
+	use {
+	  'kyazdani42/nvim-tree.lua',
+	  requires = {
+	    'kyazdani42/nvim-web-devicons',
+	  },
+	  tag = 'nightly'
+	}
+
 	-- IDE
   use {
     'nvim-treesitter/nvim-treesitter',
