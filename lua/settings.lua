@@ -2,6 +2,8 @@ vim.cmd [[
 	filetype on             " enable filetype detection
 	filetype plugin on      " load file-specific plugins
 	filetype indent on      " load file-specific indentation
+
+	set whichwrap+=<,>,[,],h,l
 ]]
 
 local options = {
