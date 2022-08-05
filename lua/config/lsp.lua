@@ -27,12 +27,16 @@ lspconfig.sumneko_lua.setup {
 		}
 	}
 }
+
 lspconfig.ltex.setup {
 	capabilities = capabilities,
 	settings = {
 		ltex = {
 			enabled = {"latex", "bibtex", "markdown"},
-			language =  "pt-BR"
+			language =  "pt-BR",
+			dictionary = {
+				['pt-BR'] = { 'Verçosa', 'Dayene', 'Tight' },
+			}
 		}
 	}
 }
