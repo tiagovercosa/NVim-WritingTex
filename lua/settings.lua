@@ -40,15 +40,11 @@ if vim.cmd [["termguicolors"]] then
 	vim.opt.termguicolors = true
 end
 
--- VimTex
-vim.g.vimtex_view_method = "zathura"
-vim.g.vimtex_view_general_viewer = "okular"
-vim.g.tex_flavor = "latex"
-vim.g.vimtex_quickfix_mode = 0
-vim.g.tex_conceal='abdmg'
+-- TeX
+vim.g.tex_flavor = 'latex'
+vim.g.tex_conceal = 'abdmgs'
 
 -- Conceal
-vim.g.tex_conceal='abdmg'
 vim.cmd [[hi Conceal ctermbg=none]]
 
 -- UltiSnips
