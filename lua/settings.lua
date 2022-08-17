@@ -29,7 +29,8 @@ local options = {
   cmdheight = 2,
   conceallevel = 1,
   colorcolumn = "80",
-  scrolloff = 7
+  scrolloff = 7,
+  signcolumn = "yes"
 }
 
 for i, j in pairs(options) do
