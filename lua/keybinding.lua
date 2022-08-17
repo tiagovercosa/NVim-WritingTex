@@ -21,6 +21,10 @@ nkeymap('<c-k>', ':lua vim.lsp.buf.signature_help()<cr>')
 nkeymap('<leader>af', ':lua vim.lsp.buf.code_action()<cr>')
 nkeymap('<leader>rn', ':lua vim.lsp.buf.rename()<cr>')
 
+-- Map `j` to `gj` and `k` to `gk`, which makes it easier to navigate wrapped lines.
+keymap( 'n', 'j', 'gj', opts )
+keymap( 'n', 'k', 'gk', opts )
+
 -- Buffer management
 keymap( 'n', '<A-.>', ':bnext<CR>', opts )
 keymap( 'n', '<A-,>', ':bprev<CR>', opts )
