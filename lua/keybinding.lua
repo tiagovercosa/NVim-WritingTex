@@ -45,3 +45,10 @@ keymap( 'n', '<C-o>', ':!opout % <cr><cr>', opts )
 -- KeyBinding  for nvim-tree
 keymap( 'n', '<leader>e', ':NvimTreeToggle<CR>', opts )
 keymap( 'n', '<leader>r', ':NvimTreeRefresh<CR>', opts )
+
+-- Inkscape-Figures
+vim.cmd [[
+inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+
+nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+]]
