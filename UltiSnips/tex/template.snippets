@@ -1,0 +1,39 @@
+snippet template "Basic template for math/physics documents" bA
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb, bm}
+\usepackage{physics, siunitx}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{indentfirst}
+
+\geometry{margin=3.5cm}
+\sisetup{separate-uncertainty=true, exponent-product=\cdot, range-units=single}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+\setlength{\parindent}{0pt}
+
+% -- Inkscape figure manager --
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[2][1]{%
+	\def\svgwidth{#1\columnwidth}
+	\import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+% ----
+
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\newcommand{\TODO}[1]{{\textbf{TODO:} {\color{red} #1}}}
+
+\begin{document}
+	$0
+\end{document}
+endsnippet

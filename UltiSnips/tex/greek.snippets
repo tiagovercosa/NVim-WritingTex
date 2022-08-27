@@ -1,0 +1,22 @@
+# Greek letters
+
+global !p
+def math():
+  return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+
+context "math()"
+snippet ;N "\nabla" iA
+\nabla
+endsnippet
+
+context "math()"
+snippet ;a "\alpha" iA
+\alpha
+endsnippet
+
+context "math()"
+snippet ;b "\beta" iA
+\beta
+endsnippet
+

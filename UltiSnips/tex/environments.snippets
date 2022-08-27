@@ -1,0 +1,34 @@
+priority 10
+
+snippet itt "Itemize environment" bA
+\begin{itemize}
+	\item $0
+\end{itemize}
+endsnippet
+
+snippet enum "Enumerate" bA
+\begin{enumerate}
+	\item ${0:${VISUAL}}
+\end{enumerate}
+endsnippet
+
+snippet item "\item" b
+\item ${0:${VISUAL}}
+endsnippet
+
+snippet table "Table environment" b
+\begin{table}[${1:htpb}]
+	\centering
+	\caption{${2:caption}}
+	\label{tab:${3:label}}
+	\begin{tabular}{${5:c}}
+	$0${5/((?<=.)c|l|r)|./(?1: & )/g}
+	\end{tabular}
+\end{table}
+endsnippet
+
+snippet qt "Quote environment" b
+\begin{quote}
+	$0
+\end{quote}
+endsnippet

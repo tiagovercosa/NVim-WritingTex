@@ -1,0 +1,66 @@
+# BEGIN PREAMBLE SNIPPETS
+# --------------------------------------------- #
+
+snippet dclo "ClassOpt" bA
+\documentclass[${1:opts}]{${2:class}}
+$0
+endsnippet
+
+snippet dcl "Class" b
+\documentclass{${1:class}}
+$0
+endsnippet
+
+snippet pkg "usepackage - removes square braces if options removed" bA
+\usepackage`!p snip.rv='[' if t[1] else ""`${1:options}`!p snip.rv = ']' if t[1] else ""`{${2:package}}$0
+endsnippet
+
+# Enviroment
+snippet beg "Enviroment" bA
+\begin{${1:ENV}}
+	${0:${VISUAL}}
+\end{$1}
+endsnippet
+
+# BEGIN SECTIONING SNIPPETS
+# --------------------------------------------- #
+
+snippet chap "Chapter" b!
+\chapter{${1:chapter}}
+\label{sec:${2:${1/\\\w+\{(.*?)\}\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/g}}}
+
+$0
+
+% chapter $2 (end)
+endsnippet
+
+snippet sec "Section" b!
+\section{${1:section}}
+\label{sec:${2:${1/\\\w+\{(.*?)\}\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/g}}}
+
+$0
+
+% section $2 (end)
+endsnippet
+
+snippet ss "SubSection" b!
+\subsection{${1:subsection}}
+\label{sec:${2:${1/\\\w+\{(.*?)\}\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/g}}}
+
+$0
+
+% subsection $2 (end)
+endsnippet
+
+snippet sss "SubSubSection" bA!
+\subsubsection{${1:subsubsection}}
+\label{sec:${2:${1/\\\w+\{(.*?)\}\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/g}}}
+
+$0
+
+% subsubsection $2 (end)
+endsnippet
+
+snippet toc "tableofcontents" b
+\tableofcontents
+endsnippet
