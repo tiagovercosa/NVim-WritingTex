@@ -50,8 +50,8 @@ require('packer').startup(function(use)
     config = function()
       vim.g.vimwiki_list = {
         {
-          path = '~/doc/repos/mywiki',
-          path_html = '~/dox/repos/mywiki/html_path'
+          path = '~/documents/repos/mywiki',
+          path_html = '~/documents/repos/mywiki/html_path'
         }
       }
       vim.g.vimwiki_global_ext = 0
