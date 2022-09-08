@@ -35,7 +35,7 @@ lspconfig.ltex.setup {
 			enabled = {"latex", "bibtex", "markdown"},
 			language =  "pt-BR",
 			dictionary = {
-				['pt-BR'] = { 'Verçosa', 'Dayene', 'Tight' },
+				['pt-BR'] = { 'Verçosa', 'Dayene', 'Tight', 'Bloch', 'Dirac' },
 			}
 		}
 	}
