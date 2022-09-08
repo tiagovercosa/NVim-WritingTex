@@ -65,14 +65,21 @@ require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function ()
       require'alpha'.setup(require'alpha.themes.startify'.config)
-      local startify = require("alpha.themes.startify")
-      startify.section.mru_cwd.val = { { type = "padding", val = 0 } }
-      startify.section.bottom_buttons.val = {
-        startify.button("w", "Wiki", ":VimwikiIndex<cr>"),
-        startify.button("v", "Neovim Config", ":e ~/.config/nvim/init.lua<cr>"),
-        startify.button("q", "QUIT NEOVIM", ":qa<cr>"),
-      }
+      -- local startify = require("alpha.themes.startify")
+      -- startify.section.mru_cwd.val = { { type = "padding", val = 0 } }
+      -- startify.section.bottom_buttons.val = {
+      --   startify.button("v", "Neovim Config", ":e ~/.config/nvim/init.lua<cr>"),
+      --   startify.button("q", "QUIT NEOVIM", ":qa<cr>"),
+      -- }
       vim.api.nvim_set_keymap('n', '<c-n>', ':Alpha<cr>', {noremap = true})
+    end
+  }
+
+  -- Devicons
+  use {
+    'kyazdani42/nvim-web-devicons',
+    config = function ()
+      require'nvim-web-devicons'.setup {}
     end
   }
 
